@@ -7,15 +7,41 @@ li
 {
 text-decoration: none;
 display: inline-block;
-padding-left: 73px;
+padding: 0 1rem;
 font-size: larger;
+font-family: sans-serif;
 }
 ul{
     float: right;
     line-height: 50px;
     margin-right: 3%;
-
+}
+a{
+    text-decoration: none;
 }
 // padding: 9px;
 // border-radius: 19px;
 // 
+.abt:hover{
+    background-color:  rgb(201, 217, 217);
+    color:  rgb(64, 133, 133);
+    cursor: pointer;
+}
+
+.abt::after
+{
+content: '';
+height: 2px;
+width: 100%;
+background: green;
+display: block;
+left: 0;
+bottom: 9px;
+opacity: 0;
+margin-bottom: -10px;
+position: relative;
+transition:all .5s;
+}
+.abt:hover::after{
+   opacity: 1;
+}

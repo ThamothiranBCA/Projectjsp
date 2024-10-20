@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MaincontComponent } from "./maincont/maincont.component";
 import { DetailComponent } from './detail/detail.component';
 import { TEAMComponent } from './team/team.component';
+import { MoretmComponent } from './moretm/moretm.component';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { TEAMComponent } from './team/team.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, HeaderComponent, FooterComponent, MaincontComponent,DetailComponent,TEAMComponent]
+    imports: [RouterOutlet, HeaderComponent, FooterComponent, MaincontComponent,DetailComponent,TEAMComponent, MoretmComponent]
 })
 export class AppComponent {
   title = 'project';
